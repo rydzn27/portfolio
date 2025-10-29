@@ -9,6 +9,7 @@
   --text-light: #e6e6e6;
   --muted: #999;
   --transition: 0.3s ease;
+  --shadow: rgba(0, 255, 159, 0.3);
 }
 
 body.light {
@@ -17,6 +18,7 @@ body.light {
   --text-light: #111;
   --muted: #444;
   --accent: #0077ff;
+  --shadow: #0077ff;
   background: radial-gradient(circle at center, #ffffff, #ddd);
 }
 
@@ -72,6 +74,7 @@ body {
   cursor: pointer;
   outline: none;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -80,7 +83,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text-light);
+  color: #e6e6e6;
   font-weight: 500;
   position: relative;
   transition: var(--transition);
@@ -170,7 +173,7 @@ body {
 .about img {
   width: 300px;
   border-radius: 50%;
-  box-shadow: 0 0 30px rgba(0, 255, 159, 0.3);
+  box-shadow: 0 0 30px var(--shadow);
   object-fit: cover;
 }
 
